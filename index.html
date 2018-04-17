@@ -28,6 +28,7 @@
         <option  value="85">85</option>
         <option  value="75">75</option>
         <option  value="ls75">ls75</option>
+         <option  value="lq80">lq80</option>
       </select>
     </div>
     <!-- <div class="col-sm-10" >
@@ -122,6 +123,11 @@
              td3.text((kuan-24+75)/2-3);
              td4.text((kuan-24+75)/2-3-130)
 
+         }else if(a=="lq80"){
+             td1.text(gao-38)
+             td2.text(gao-38-140);
+             td3.text((kuan-24+80)/2-3);
+             td4.text((kuan-24+80)/2-3-140)
          }
 
          
@@ -133,45 +139,7 @@
      });
 
 
-    $("#btn").on("click",function(){
-     
-          console.log(888)
-      var a=$("#firstname").val();
-      var gao=$("#totalHeight").val();
-      var kuan=$("#totalWidth").val();
-      var td1=$(".success").find("td").eq(0);
-      var td2=$(".success").find("td").eq(1);
-      var td3=$(".success").find("td").eq(2);
-      var td4=$(".success").find("td").eq(3);
-
-
-
-         if(a==85){
-
-          td1.text(gao-35)
-          td2.text(gao-35-145);
-          td3.text((kuan-38+85)/2);
-          td4.text((kuan-38+85)/2-145)
-
-
-
-         }else if(a==75){
-
-             td1.text(gao-38)
-             td2.text(gao-38-130);
-             td3.text((kuan-24+75)/2-3);
-             td4.text((kuan-24+75)/2-3-130)
-
-
-
-         }
-
-
-
-    
-
-     });
-
+   
 
 
 
